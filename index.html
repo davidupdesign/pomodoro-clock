@@ -4,25 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="app.css" />
-    <title>Pomodoro Clock</title>
+    <title>Pomodoro Timer</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Jersey+10&display=swap");
+    </style>
   </head>
 
   <body>
-    <div class="pomodoro-clock">
-      <h1 id="timer">25:00</h1>
-      <h2 id="session-type">Work Session</h2>
-      <button id="start-pause-button">Start/Pause</button>
-      <button id="stop-button">Stop</button>
-      <button id="reset-button">Reset</button>
+    <div class="back-background">
+      <h1>Pomodoro Timer</h1>
+      <p>
+        The Pomodoro Technique is a time-management method that alternates
+        25-minute focus intervals with 5-minute breaks.
+      </p>
+      <div class="pomodoro-clock">
+        <h1 id="timer">25:00</h1>
+        <h2 id="session-type">Work Session</h2>
+        <div class="button-container">
+          <button id="start-pause-button">Start/Pause</button>
+          <button id="stop-button">Stop</button>
+          <button id="reset-button">Reset</button>
+        </div>
+      </div>
+      <div class="custom-sessions">
+        <label for="work-session">Work</label>
+        <input type="number" id="work-session" value="25" min="1" />
+        <label for="break-session">Break</label>
+        <input type="number" id="break-session" value="5" min="1" />
+      </div>
+      <p id="bottom-line">
+        Using Pomodoro Timer boosts productivity and prevents burnout by
+        breaking large tasks into manageable, timed sessions.
+      </p>
     </div>
-    <div class="custom-sessions">
-      <label for="work-session">Work</label>
-      <input type="number" id="work-session" value="25" min="1">
-      <label for="break-session">Break</label>
-      <input type="number" id="break-session" value="5" min="1">
-    </div>
-
-
-  <script src="app.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
