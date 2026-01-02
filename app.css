@@ -139,7 +139,9 @@ button:active {
     padding-top: 20px;
     padding-left: 15px;
     padding-right: 15px;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
+
   }
 
   h1 {
