@@ -1,21 +1,20 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Bungee Inline", sans-serif;
-    background-color: #353535;
-    color: #ebdbb1;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: 40px;
-    overflow: hidden;
-    
+  font-family: "Bungee Inline", sans-serif;
+  background-color: #353535;
+  color: #ebdbb1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 40px;
+  overflow: hidden;
 }
 
 /* .back-background {
@@ -26,13 +25,13 @@ body {
 } */
 
 h1 {
-    font-size: 4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    text-shadow: -1px 2px 12px #00000087;
+  font-size: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-shadow: -1px 2px 12px #00000087;
 }
 
 p {
@@ -45,7 +44,7 @@ p {
 }
 
 #bottom-line {
-    font-size: 1.7rem;
+  font-size: 1.7rem;
 }
 
 .pomodoro-clock {
@@ -78,134 +77,132 @@ p {
 }
 
 button {
-    background-color: #b26286;
-    color: #ebdbb1;
-    border-radius: 12px;
-    border: 2px solid #b26286;
-    padding: 6px 10px;
-    font-family: "Bungee Inline", sans-serif;
-    font-size: 1.5rem;
-    margin: 5px;
-    box-shadow: 0 3px 12px rgba(42, 42, 42, 0.466);
-    text-shadow: -1px 2px 8px #00000055;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: transform 0.12s ease-in-out;
-  }
-  
-  button:hover {
-    transform: scale(0.95);
-    color: #ebdbb29b;
-  }
-  
-  button:active {
-    transform: scale(0.9);
-  }
-  
-  #reset-button:hover {
-    color: #cb241c;
-  }
+  background-color: #b26286;
+  color: #ebdbb1;
+  border-radius: 12px;
+  border: 2px solid #b26286;
+  padding: 6px 10px;
+  font-family: "Bungee Inline", sans-serif;
+  font-size: 1.5rem;
+  margin: 5px;
+  box-shadow: 0 3px 12px rgba(42, 42, 42, 0.466);
+  text-shadow: -1px 2px 8px #00000055;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: transform 0.12s ease-in-out;
+}
+
+button:hover {
+  transform: scale(0.95);
+  color: #ebdbb29b;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+#reset-button:hover {
+  color: #cb241c;
+}
 
 .custom-sessions {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
 .custom-sessions label {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .custom-sessions input {
-    width: 60px;
-    height: auto;
-    border: 2px solid #59aaaf;
-    background-color: transparent;
-    color: #59aaaf;
-    font-family: "Jersey 10", sans-serif;
-    font-size: 2.2rem;
-    text-align: center;
-    border-radius: 6px;
+  width: 60px;
+  height: auto;
+  border: 2px solid #59aaaf;
+  background-color: transparent;
+  color: #59aaaf;
+  font-family: "Jersey 10", sans-serif;
+  font-size: 2.2rem;
+  text-align: center;
+  border-radius: 6px;
 }
 
 .custom-sessions input:focus {
-    outline: none;
-    border-color: #e8a855;
+  outline: none;
+  border-color: #e8a855;
 }
 
 @media (max-width: 600px) {
-    body {
-        padding-top: 20px;
-        padding-left: 15px;
-        padding-right: 15px;
-        height: 100vh;
-        overflow: hidden;
+  body {
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 100vh;
+  }
 
-    }
+  h1 {
+    font-size: 2.5rem;
+  }
 
-    h1 {
-        font-size: 2.5rem;
-    }
+  p {
+    font-size: 1.3rem;
+    max-width: 100%;
+  }
 
-    p {
-        font-size: 1.3rem;
-        max-width: 100%;
-    }
+  #bottom-line {
+    font-size: 1.2rem;
+  }
 
-    #bottom-line {
-        font-size: 1.2rem;
-    }
+  .pomodoro-clock {
+    padding: 20px 25px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
 
-    .pomodoro-clock {
-        padding: 20px 25px;
-        margin-top: 15px;
-        margin-bottom: 20px;
-    }
+  #timer {
+    font-size: 4rem;
+  }
 
-    #timer {
-        font-size: 4rem;
-    }
+  #session-type {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
 
-    #session-type {
-        font-size: 1.2rem;
-        margin-bottom: 15px;
-    }
+  .button-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
 
-    .button-container {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 5px;
-    }
+  #start-pause-button {
+    width: 100%;
+  }
 
-    #start-pause-button {
-        width: 100%;
-    }
+  #stop-button,
+  #reset-button {
+    width: 45.5%;
+  }
 
-    #stop-button,
-    #reset-button {
-        width: 45.5%;
-    }
+  button {
+    font-size: 1.2rem;
+    padding: 8px 15px;
+    width: 100%;
+  }
 
-    button {
-        font-size: 1.2rem;
-        padding: 8px 15px;
-        width: 100%;
-    }
+  .custom-sessions {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
 
-    .custom-sessions {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
+  .custom-sessions label {
+    font-size: 1.8rem;
+  }
 
-    .custom-sessions label {
-        font-size: 1.8rem;
-    }
-
-    .custom-sessions input {
-        width: 50px;
-        font-size: 1.8rem;
-    }
+  .custom-sessions input {
+    width: 50px;
+    font-size: 1.8rem;
+  }
 }
